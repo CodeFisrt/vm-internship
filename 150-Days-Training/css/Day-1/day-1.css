@@ -1,0 +1,35 @@
+/* 
+selector {
+    property:value
+}
+1] simple selector
+2] pesudo selector
+3] pesudo element
+4] attribute selector
+
+simple selector 
+ 1] class
+ 2] id
+ 3] element name
+ 4] *
+*/
+ body {
+    /* background-color: red; */
+ }
+ h1 {
+    color: red;
+ }
+ p {
+    font-size: 100px;
+ }
+ .test-color {
+    background-color: red;
+    color: #fff;
+ }
+ #id_test {
+    font-size: 50px;
+    color: green;
+ }
+ * {
+    color: rgb(44, 44, 43);
+ }

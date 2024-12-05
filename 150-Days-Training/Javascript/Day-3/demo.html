@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form to Table</title>
+</head>
+<body>
+
+    <h2>Enter Details</h2>
+
+    <!-- Simple Form -->
+    <form>
+        Name: <input type="text" id="nameInput" placeholder="Enter your name"><br><br>
+        Email: <input type="text" id="emailInput" placeholder="Enter your email"><br><br>
+        <button type="button" onclick="addToTable()">Add to Table</button>
+    </form>
+
+    <!-- Table to Display Data -->
+    <h3>Submitted Data:</h3>
+    <table border="1" id="dataTable">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </table>
+
+    <script>
+        // Function to add form data to the table
+        function addToTable() {
+            // Get the input values using document.getElementById
+            var name = document.getElementById('nameInput').value;
+            var email = document.getElementById('emailInput').value;
+
+            // Get the table where data will be added
+            var table = document.getElementById('dataTable');
+
+            // Insert a new row at the end of the table
+            var newRow = table.insertRow();
+
+            // Insert two new cells (columns) in the new row
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+
+            // Add the input values to the new cells
+            cell1.innerHTML = name;
+            cell2.innerHTML = email;
+
+            // Clear the form inputs
+            document.getElementById('nameInput').value = '';
+            document.getElementById('emailInput').value = '';
+        }
+    </script>
+
+</body>
+</html>

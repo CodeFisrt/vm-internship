@@ -1,0 +1,72 @@
+/* 
+
+selector:pseudo-class {
+}
+
+ */
+ a {
+    margin-bottom: 10px;
+    display: inline-block;
+ }
+ /* a:link {
+    background-color: red;
+ }
+ a:visited {
+    background-color: green;
+ }
+ a:hover {
+    background-color: yellow;
+ }
+ a:active {
+    background: pink;
+ } */
+ h1:hover {
+    color: orange;
+    cursor: pointer;
+ }
+img {
+    border: 5px solid red;
+}
+img:hover {
+    border: 5px solid green;
+}
+.para-test p:first-child {
+    background-color: green;
+}
+.para-test p:last-child {
+    background-color: green;
+}
+.para-test p:nth-child(7){
+    background-color: green;
+}
+/* 
+selector::psudo-element {
+
+}
+*/
+.ab-test::before {
+    content: "Welcome ";
+}
+.ab-test::after {
+    content: " Pune";
+}
+.fl-test::first-letter {
+    color: orangered;
+    font-size: 80px;
+}
+.fline-test::first-line {
+    background-color: blue;
+    color: wheat;
+}
+p::selection {
+    background-color: yellow;
+}
+/* 
+attribute selector
+*/
+a[target="_blank"]{
+    background-color: red;
+}
+.vishal-test {
+    
+}

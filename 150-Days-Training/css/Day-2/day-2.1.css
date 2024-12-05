@@ -1,0 +1,12 @@
+.gographical-wrap {
+    background-color: #021450;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+}
+table tr td {
+    border: 1px solid;
+}
+th {
+    background-color: orange;
+}
